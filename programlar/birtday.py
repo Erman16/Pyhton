@@ -1,0 +1,10 @@
+import datetime
+a = datetime.datetime.now()
+birthday_d = int(input("please enter your bithday day:"))
+birthday_m = int(input("please enter your bithday mounth:"))
+birthday_y = int(input("please enter your bithday year:"))
+age_d = abs(a.day - birthday_d)
+age_m = abs(a.month - birthday_m)
+age_y = abs(a.year - birthday_y)
+print("your age:",age_y)
+print("you are %d years old since: %d mounth %d day"%(age_y,age_m,age_d))
